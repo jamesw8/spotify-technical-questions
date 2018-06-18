@@ -1,6 +1,6 @@
 def decodeString(s):
 	'''
-	Assumptions: Encoded string is enclosed with square brackets at the highest level (s always starts with k[])
+	Assumptions: - Encoded string is enclosed with square brackets at the highest level (s always starts with k[])
 
 	Given an encoded string, return its corresponding decoded string. 
 	The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is repeated exactly k times. 

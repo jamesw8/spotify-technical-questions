@@ -1,8 +1,9 @@
-from 1 import sortByStrings
-from 2 import decodeString
-from 3 import changePossibilities
+from q1 import sortByStrings
+from q2 import decodeString
+from q3 import changePossibilities
 
-if __name__ == '__main__':
+def main():
+	# Run driver code here
 	while True:
 		choice = input('Question 1, 2, 3? ')
 		if '1' in choice:
@@ -12,3 +13,12 @@ if __name__ == '__main__':
 		elif '2' in choice:
 			s = input('String s? ')
 			print(decodeString(s))
+		elif '3' in choice:
+			amount = int(input('Amount? '))
+			coins = list(map(int, input('Coins? (Space seperated) ').split(' ')))
+			print(changePossibilities(amount, coins))
+		else:
+			return
+			
+if __name__ == '__main__':
+	main()
