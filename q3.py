@@ -57,7 +57,6 @@ def getBinNumbers(num):
 	for i in range(2**num):
 		yield '0'*(num-len(bin(i)[2:])) + bin(i)[2:]
 
-
 def generatePermutations(list_):
 	# Use bitmasking to create list of permutations using binary number generator
 	retval = []
